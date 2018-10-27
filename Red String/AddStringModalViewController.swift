@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import CoreData
 
 class AddStringModalViewController: UIViewController {
-
+    @IBOutlet weak var nameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    } 
-
-    @IBAction func cancel(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func addNewString(_ sender: Any) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let newString = StringObject(context: managedContext)
+        newString.name = nameField.text
+        appDelegate.saveContext()
+        navigationController?.popViewController(animated: true)
     }
 }
