@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		30A2378E21850B3C003B044E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2378D21850B3C003B044E /* AppDelegate.swift */; };
-		30A2379021850B3C003B044E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A2378F21850B3C003B044E /* ViewController.swift */; };
 		30A2379321850B3C003B044E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A2379121850B3C003B044E /* Main.storyboard */; };
 		30A2379621850B3C003B044E /* Red_String.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30A2379421850B3C003B044E /* Red_String.xcdatamodeld */; };
 		30A2379821850B3E003B044E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A2379721850B3E003B044E /* Assets.xcassets */; };
 		30A2379B21850B3E003B044E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A2379921850B3E003B044E /* LaunchScreen.storyboard */; };
 		30A237A621850B3E003B044E /* Red_StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A237A521850B3E003B044E /* Red_StringTests.swift */; };
+		30A237B121850E73003B044E /* AddStringModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A237B021850E73003B044E /* AddStringModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* Begin PBXFileReference section */
 		30A2378A21850B3C003B044E /* Red String.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red String.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A2378D21850B3C003B044E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30A2378F21850B3C003B044E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30A2379221850B3C003B044E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A2379521850B3C003B044E /* Red_String.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Red_String.xcdatamodel; sourceTree = "<group>"; };
 		30A2379721850B3E003B044E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		30A237A121850B3E003B044E /* Red StringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Red StringTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A237A521850B3E003B044E /* Red_StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Red_StringTests.swift; sourceTree = "<group>"; };
 		30A237A721850B3E003B044E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A237B021850E73003B044E /* AddStringModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStringModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				30A2378D21850B3C003B044E /* AppDelegate.swift */,
-				30A2378F21850B3C003B044E /* ViewController.swift */,
 				30A2379121850B3C003B044E /* Main.storyboard */,
 				30A2379721850B3E003B044E /* Assets.xcassets */,
 				30A2379921850B3E003B044E /* LaunchScreen.storyboard */,
 				30A2379C21850B3E003B044E /* Info.plist */,
 				30A2379421850B3C003B044E /* Red_String.xcdatamodeld */,
+				30A237B021850E73003B044E /* AddStringModalViewController.swift */,
 			);
 			path = "Red String";
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A2379021850B3C003B044E /* ViewController.swift in Sources */,
+				30A237B121850E73003B044E /* AddStringModalViewController.swift in Sources */,
 				30A2379621850B3C003B044E /* Red_String.xcdatamodeld in Sources */,
 				30A2378E21850B3C003B044E /* AppDelegate.swift in Sources */,
 			);
