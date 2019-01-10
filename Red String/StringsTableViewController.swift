@@ -48,7 +48,22 @@ class StringsTableViewController: UITableViewController {
         
         if let stringName = string.name {
             cell.textLabel?.text = stringName
+            cell.detailTextLabel?.text = ""
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            let stringToDelete = strings[indexPath.row]
+            context.delete(stringToDelete)
+            do {
+                try context.save()
+                getAllStrings()
+            } catch {
+               //Error!
+            }
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        }
     }
 }
